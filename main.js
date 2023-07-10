@@ -53,6 +53,8 @@ function startQuiz() {
 
 function showQuestion() {
   resetState();
+  nextBtn.innerHTML = "Next";
+  nextBtn.style.display = "none";
   let currentQuestion = questions[questionIndex];
   let currentQuestionNumber = questionIndex + 1;
   let currentQuestionText = `${currentQuestionNumber}. ${currentQuestion.question}`;
